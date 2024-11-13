@@ -11,7 +11,7 @@ python -m venv .env
 .env\Scripts\activate
 pip install -r requirements.txt
 ```
-##Usage
+## Usage
 To use the streamlit application, inside the virtual environment run the following command:
 ```
 streamlit run app.py
