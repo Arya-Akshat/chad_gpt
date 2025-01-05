@@ -69,9 +69,10 @@ class PromptEvaluator:
 
 
 # Streamlit App
-st.title("Prompt Forge - Prompt Improvement Tool")
+st.title("PromptForge: Elevate Your Prompt Crafting")
 st.sidebar.header("About")
-st.sidebar.write("This tool helps improve prompts for better results.")
+st.sidebar.write("PromptForge is a cutting-edge tool designed to help users craft highly effective prompts for large language models. Whether you're an AI enthusiast, developer, or researcher, this tool empowers you to:
+")
 
 # Initialize PromptEvaluator with API key
 API_KEY = "AIzaSyB47MN1x_-5ZUUBgI-qEaqybb4aysvQ_TM"
