@@ -14,7 +14,7 @@ template = ["You are an expert at refining prompts for large language models. ",
                 "3. Format and structure\n",
                 "4. Potential ambiguities\n"]
 
-API = "AIzaSyB47MN1x_-5ZUUBgI-qEaqybb4aysvQ_TM" 
+API = os.getenv('GEMINI_API_KEY')
 genai.configure(api_key=str(API))
 model = genai.GenerativeModel(
     model_name="gemini-1.5-flash",
