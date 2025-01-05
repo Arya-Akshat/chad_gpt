@@ -9,7 +9,6 @@ import google.generativeai as genai
 
 
 class GeminiLLM(LLM, BaseModel):
-    """Custom LLM class for integrating Gemini with LangChain"""
 
     api_key: str = Field(..., description="API key for Gemini")
     model_name: str = Field(default="gemini-pro", description="Gemini model name")
@@ -43,7 +42,6 @@ class GeminiLLM(LLM, BaseModel):
 
 
 class PromptEvaluator:
-    """Class for evaluating and improving prompts using Gemini"""
 
     def __init__(self, api_key: str):
         self.llm = GeminiLLM(api_key=api_key)
@@ -71,9 +69,9 @@ class PromptEvaluator:
 
 
 # Streamlit App
-st.title("Chad GPT - Prompt Improvement Tool")
+st.title("Prompt Forge - Prompt Improvement Tool")
 st.sidebar.header("About")
-st.sidebar.write("This tool helps improve prompts for better results using Google's Gemini API.")
+st.sidebar.write("This tool helps improve prompts for better results.")
 
 # Initialize PromptEvaluator with API key
 API_KEY = "AIzaSyB47MN1x_-5ZUUBgI-qEaqybb4aysvQ_TM"
