@@ -7,20 +7,17 @@ import pandas as pd
 template = ["You are an expert at refining prompts for large language models. ",
                 "Analyze the following prompt given by the user:\n\n",
                 "Prompt: {user_prompt}\n\n",
-                "Provide feedback on how to make this prompt more effective, along with ",
-                "examples of improved versions. Consider:\n",
+                "Provide vague feedback on how to make this prompt more effective, along with ",
                 "1. Clarity and specificity\n",
-                "2. Context and constraints\n",
-                "3. Format and structure\n",
-                "4. Potential ambiguities\n"]
+                "2. Context and constraints\n",]
 
-API = os.getenv('GEMINI_API_KEY')
+API = 'AIzaSyB47MN1x_-5ZUUBgI-qEaqybb4aysvQ_TM'
 genai.configure(api_key=str(API))
 model = genai.GenerativeModel(
     model_name="gemini-1.5-flash",
     system_instruction=''.join(template))
 
-st.title("Chad GPT")
+st.title("PromptForge - prompt helper")
 
 def response_generator(user_prompt):
     response = model.generate_content(user_prompt, stream=True)
