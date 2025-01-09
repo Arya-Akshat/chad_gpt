@@ -55,7 +55,7 @@ class PromptEvaluator:
                     "1. Objective: Clearly define the purpose of the experiment.\n"  
                     "2. Components and Materials Required: Provide a detailed list of all components, equipment, and materials needed, including specifications where applicable.\n"  
                     "3. Step-by-Step Procedure: Outline the procedure in clear, sequential steps, ensuring it is easy to follow for the intended audience.\n"  
-                    "4. Safety and Security Measures: List all safety precautions and protocols to follow during the experiment to ensure safety in the laboratory.\n"  
+                    "4. Safety and Security Measures: List all safety precautions and protocols to follow during the experiment to ensure safety in the laboratory. Also mentions hazards involved and BSL level.\n"  
                     "5. How to Use Links and Source Materials: Suggest reliable online resources or references for understanding key concepts, sourcing materials, or troubleshooting issues.\n"  
                     "6. Additional Notes: Include tips, best practices, or potential challenges to consider during the experiment.\n\n"  
                     "Response Example:\n"  
@@ -78,9 +78,9 @@ class PromptEvaluator:
 
 
 # Streamlit App
-st.title("PromptForge: Elevate Your Prompt Crafting")
+st.title("Lab-Pro: Your Daily Lab Assistant ")
 st.sidebar.header("About")
-st.sidebar.write("PromptForge is a cutting-edge tool designed to help users craft highly effective prompts for large language models. Whether you're an AI enthusiast, developer, or researcher, this tool empowers you to:")
+st.sidebar.write("Lab-Pro is an advanced chatbot designed to provide comprehensive guidance for laboratory experiments. Whether you're a student, researcher, or educator, Lab-Pro offers detailed step-by-step procedures, safety measures, materials, and links to trusted resources. Its intuitive interface ensures clear and accurate responses for a wide range of scientific experiments, making it an essential tool for enhancing laboratory learning and research.")
 
 # Initialize PromptEvaluator with API key
 API_KEY = "AIzaSyB47MN1x_-5ZUUBgI-qEaqybb4aysvQ_TM"
