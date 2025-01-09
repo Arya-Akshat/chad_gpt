@@ -98,9 +98,8 @@ def main():
 
         evaluator = PromptEvaluator(api_key=api_key)
 
-        print("Prompt Improvement Tool (using Google's Gemini API)")
+        print("Lab-PRO: Your daily lab Assistant")
         print("------------------------------------------------")
-        print("This tool will help you improve your prompts for better results.")
         print("Type 'quit' to exit the program.\n")
 
         while True:
