@@ -65,6 +65,7 @@ class PromptEvaluator:
                     "- Procedure\n"  
                     "- Safety Precautions\n"  
                     "- Additional Notes\n"  
+                    "incase of invalid details shared, ask the user to reframe their words"
 
             )
         )
