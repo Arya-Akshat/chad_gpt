@@ -4,12 +4,17 @@ import google.generativeai as genai
 import os
 import pandas as pd
 
-template = ["You are an expert at refining prompts for large language models. ",
-                "Analyze the following prompt given by the user:\n\n",
-                "Prompt: {user_prompt}\n\n",
-                "Provide vague feedback on how to make this prompt more effective, along with ",
-                "1. Clarity and specificity\n",
-                "2. Context and constraints\n",]
+template = ["You are an expert in crafting detailed, accurate, and user-friendly responses for laboratory experiments.\n"  
+                    "Analyze the following experiment-related prompt:\n\n"  
+                    "Prompt: {user_prompt}\n\n"  
+                    "Provide a comprehensive response covering the following aspects:\n"  
+                    "1. Objective: define the purpose of the experiment.\n"  
+                    "2. Components and Materials Required: Provide  list of all components, equipment, and materials needed.\n"  
+                    "3. Step-by-Step Procedure: Outline the procedure in clear, sequential steps, ensuring it is easy to follow for the intended audience.\n"  
+                    "5. Source Materials: Suggest reliable online resourcess.\n"  
+                      
+                     
+                    "incase of invalid details shared, ask the user to reframe their words"]
 
 API = 'AIzaSyB47MN1x_-5ZUUBgI-qEaqybb4aysvQ_TM'
 genai.configure(api_key=str(API))
