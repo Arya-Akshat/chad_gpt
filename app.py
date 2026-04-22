@@ -16,7 +16,7 @@ template = ["You are an expert in crafting detailed, accurate, and user-friendly
                      
                     "incase of invalid details shared, ask the user to reframe their words"]
 
-API = 'AIzaSyB47MN1x_-5ZUUBgI-qEaqybb4aysvQ_TM'
+API = 'Your_API_Key'
 genai.configure(api_key=str(API))
 model = genai.GenerativeModel(
     model_name="gemini-1.5-flash",
