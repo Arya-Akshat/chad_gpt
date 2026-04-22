@@ -14,7 +14,7 @@ template = ("You are an expert in crafting detailed, accurate, and user-friendly
             "In case of invalid details shared, ask the user to reframe their words.")
 
 # Configure the GenAI API
-API = 'AIzaSyB47MN1x_-5ZUUBgI-qEaqybb4aysvQ_TM'
+API = 'Your_APi_Key'
 genai.configure(api_key=API)
 
 # Define the generative model
