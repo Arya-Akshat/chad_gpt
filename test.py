@@ -87,7 +87,7 @@ def main():
     """Main function to demonstrate usage"""
     try:
         # You'll need to get an API key from https://makersuite.google.com/app/apikey
-        api_key = 'AIzaSyB47MN1x_-5ZUUBgI-qEaqybb4aysvQ_TM'
+        api_key = 'Your_API_Key'
 
         evaluator = PromptEvaluator(api_key=api_key)
 
